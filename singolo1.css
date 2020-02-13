@@ -102,6 +102,7 @@ html {
   transition-duration: 500ms;
 }
 
+.menu__link--active,
 .menu__link:hover {
   color: var(--primaryBg);
 }
@@ -115,6 +116,7 @@ html {
   right: -15px;
   top: calc(50% + 1px);
   transform: translateY(-50%);
+  border-radius: 50%;
 }
 
 .menu__link:last-child {
