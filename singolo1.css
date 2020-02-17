@@ -94,8 +94,9 @@ html {
   font-size: var(--littleSize);
   line-height: 1.25;
   text-decoration: none;
+  letter-spacing: -.1px;
   color: var(--white);
-  margin-right: 25px;
+  margin-right: 26px;
   text-transform: uppercase;
   position: relative;
   transition-property: color;
