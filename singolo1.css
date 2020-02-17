@@ -38,6 +38,9 @@
   --primaryBg: #f06c64;
   --dottedColor: #494e62;
   --sliderBottom: #ea676b;
+  --servicesBg: #f2f2f2;
+  --servicesTitle: #666d89;
+  --servicesText: #767e9e;
 }
 
 * {
@@ -183,12 +186,113 @@ img {
   cursor: pointer;
 }
 
-.slider__arrow:hover {
-
-}
-
 .slider__arrow--right {
   right: 10px;
   left: auto;
   transform: translateY(-50%) rotate(180deg);
+}
+
+/*services*/
+
+.services {
+  background-color: var(--servicesBg);
+}
+
+.services__wrap {
+  padding-top: 45px;
+  padding-bottom: 10px;
+}
+
+.services__title {
+  color: var(--servicesTitle);
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: -0.1px;
+  font-weight: 900;
+  margin: 15px 0 18px;
+}
+
+.services__text {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: justify;
+  color: var(--servicesText);
+  margin: 15px 0;
+}
+
+.services__list {
+  margin-top: 34px;
+}
+
+/*list*/
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin-right: -20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list__item {
+  padding-left: 80px;
+  position: relative;
+  flex-basis: 300px;
+  box-sizing: border-box;
+  margin: 0 20px 9px 0;
+}
+
+.list__item::before {
+  content: '';
+  display: block;
+  width: 59px;
+  height: 59px;
+  position: absolute;
+  left: 0;
+  top: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--servicesTitle);
+  box-sizing: border-box;
+}
+
+.list__item:nth-child(1)::before {
+  background: url('assets/img/pen.png') center no-repeat;
+}
+
+.list__item:nth-child(2)::before {
+  background: url('assets/img/bulb.png') center no-repeat;
+}
+
+.list__item:nth-child(3)::before {
+  background: url('assets/img/heart.png') center no-repeat;
+}
+
+.list__item:nth-child(4)::before {
+  background: url('assets/img/phone.png') center no-repeat;
+}
+
+.list__item:nth-child(5)::before {
+  background: url('assets/img/bubble.png') center no-repeat;
+}
+
+.list__item:nth-child(6)::before {
+  background: url('assets/img/star.png') center no-repeat;
+}
+
+.list__title {
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.05px;
+  font-weight: 900;
+  margin: 10px 0;
+  color: var(--servicesTitle);
+}
+
+.list__text {
+  font-size: 12px;
+  line-height: 22px;
+  margin: 10px 0;
+  color: var(--servicesText);
+  text-align: justify;
 }
